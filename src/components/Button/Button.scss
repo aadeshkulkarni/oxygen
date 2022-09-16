@@ -1,0 +1,181 @@
+@import './../../base/base.scss';
+
+.n-button {
+    // height: 40px;
+    height: 39px;
+    cursor: pointer;
+    box-shadow: none;
+    font-family: $PrimaryFont;
+    font-size: $BaseFontSize + 1;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    outline: none;
+    border: 0;
+    letter-spacing: 0px;
+    background: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+
+    &:disabled {
+        // opacity: 0.4;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.n-button-primary {
+    color: $PrimaryColor;
+}
+
+.n-button-secondary {
+    color: $SecondaryColor;
+}
+
+.hover-state {
+    pointer-events: none;
+}
+
+.btn-notprogress {
+    opacity: 0;
+    transition: opacity .25s ease-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.n-flat-button {
+    // padding: 0px 40px;
+    padding: 0px 30px;
+    border-radius: 3px;
+    color: $WhiteColor;
+
+    &:focus {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.n-flat-button-primary {
+    background-color: $PrimaryColor;
+
+    &:hover:not([disabled]) {
+        background-color: $PrimaryHoverColor;
+    }
+}
+
+.n-flat-button-secondary {
+    background-color: $SecondaryColor;
+
+    &:hover:not([disabled]) {
+        background-color: $SecondaryHoverColor;
+    }
+}
+
+
+
+.n-button-stroke {
+    // padding: 0px 40px;
+    padding: 0px 30px;
+    border-radius: 3px;
+    background: $WhiteColor;
+
+    &:focus {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.n-button-stroke-primary {
+    border: 1px solid $PrimaryColor;
+    color: $PrimaryColor;
+
+    // background-color: #B5FFE7;
+    &:hover:not([disabled]) {
+        background-color: #DFEFE9;
+    }
+}
+
+.n-button-stroke-secondary {
+    border: 1px solid $SecondaryColor;
+    color: $SecondaryColor;
+
+    &:hover:not([disabled]) {
+        background-color: #E2E4F1;
+    }
+}
+
+.n-button-stroke:disabled,
+.n-flat-button:disabled,
+.n-button-rounded:disabled {
+    // opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: $SecondaryDisabledColor;
+    color: $BlackColor;
+}
+
+.n-button-rounded {
+    border-radius: 24px;
+    padding: 0px 32px;
+}
+
+.n-button-large {
+    // padding: 0px 64px;
+    // height: 64px;
+    padding: 0px 60px;
+    height: 60px;
+    font-size: $BaseFontSize + 6;
+    line-height: 25px;
+}
+
+.n-button-mid {
+    // padding: 0px 48px;
+    padding: 0px 45px;
+    height: 48px;
+    font-size: $BaseFontSize + 3;
+    line-height: 21px;
+}
+
+.n-button-focused {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.n-button-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.n-btn-spinner {
+    text-align: center;
+}
+
+.n-btn-spin {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    float: left;
+    position: relative;
+    left: -20px;
+    display: flex;
+
+    img {
+        background: white;
+    }
+
+    svg {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.disable-click {
+    pointer-events: none;
+}
