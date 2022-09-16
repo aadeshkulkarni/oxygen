@@ -9,7 +9,7 @@ export interface ButtonProps {
     size?: string
     focused?: Boolean
     showProgress?: Boolean
-    stroke: Boolean
+    stroke?: Boolean
     children: React.ReactNode
 }
 
