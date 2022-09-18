@@ -14,8 +14,8 @@ export interface ButtonProps {
 }
 
 const Button = (props: ButtonProps) => {
-    const [showProgress, setShowProgress] = useState();
-    const [icon, setIcon] = useState();
+    const [showProgress, setShowProgress] = useState(false);
+    const [icon, setIcon] = useState('');
         function generateClasses(){
             let classes='';
             if(props.rounded){
