@@ -19,7 +19,7 @@
 - You can start consuming the components like so
 
 ``` (App.js)
-import Button from '@aadeshkulkarni/oxygen';
+import { Button } from '@aadeshkulkarni/oxygen';
 .
 .
 <Button rounded theme="primary">Save</Button>
