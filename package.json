@@ -1,6 +1,6 @@
 {
   "name": "@aadeshkulkarni/oxygen",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "React component library",
   "scripts": {
     "rollup": "rollup -c",
