@@ -22,7 +22,7 @@
 import { Button } from '@aadeshkulkarni/oxygen';
 .
 .
-<Button rounded theme="primary">Save</Button>
+<Button rounded={true} theme="primary">Save</Button>
 
 ```
 -------------- 
