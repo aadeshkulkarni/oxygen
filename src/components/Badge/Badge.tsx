@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Badge.scss'
 export interface BadgeProps {
     state?: string,
-    fill?: Boolean
+    fill?: Boolean,
+    children: React.ReactNode
 }
 
 const Badge = (props: BadgeProps) => {
@@ -39,7 +40,7 @@ const Badge = (props: BadgeProps) => {
         }
 
     return <div className={`nitrozen-badge ${generateClasses()}`}>
-        test
+Success
     </div>
 }
 

@@ -5,6 +5,6 @@ import Badge from './Badge';
 
 describe("Badge", () => {
     test("renders the Badge component", () => {
-        render(<Badge state='success' fill={true}></Badge>)
+        render(<Badge state='success' fill={true}>Success</Badge>)
     })
 })
