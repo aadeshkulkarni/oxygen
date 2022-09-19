@@ -40,7 +40,7 @@ const Badge = (props: BadgeProps) => {
         }
 
     return <div className={`nitrozen-badge ${generateClasses()}`}>
-Success
+      {props.children}
     </div>
 }
 
