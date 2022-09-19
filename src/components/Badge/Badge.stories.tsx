@@ -33,17 +33,9 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Badge> = (args) => <Badge {...args} />;
 export const Badge_success =  Template.bind({});
-// export const PrimaryBtn = Template.bind({});
+
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Badge_success.args = {
 state : "success",
 fill:true
 };
-
-// export const SecondaryBtn = Template.bind({});
-// SecondaryBtn.args = {
-//   theme: 'secondary',
-//   rounded: true,
-//   children: 'Secondary Badge',
-//   size: 'large'
-// };
