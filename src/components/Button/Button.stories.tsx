@@ -24,6 +24,7 @@ export default {
     },
     theme: { control: 'select', options: ['primary', 'secondary'] },
     size: { control: 'select', options: ['small', 'medium','large'] },
+    type: { control: 'select', options: ['button', 'submit'] },
     rounded: {
       options: [true, false],
       control: { type: 'radio' },
@@ -35,19 +36,47 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const PrimaryBtn = Template.bind({});
+export const PrimaryButton = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-PrimaryBtn.args = {
+PrimaryButton.args = {
   theme: 'primary',
-  rounded: true,
-  children: 'Primary Button',
-  size: 'large'
+  size:'large',
+  rounded:true,
+  children: 'Unbutton me',
 };
 
-export const SecondaryBtn = Template.bind({});
-SecondaryBtn.args = {
-  theme: 'secondary',
-  rounded: true,
-  children: 'Secondary Button',
-  size: 'large'
+export const PrimaryFlat = Template.bind({});
+PrimaryFlat.args = {
+  theme: 'primary',
+  children: 'Unbutton me',
 };
+
+export const ButtonLoading = Template.bind({});
+ButtonLoading.args = {
+  theme: 'primary',
+  children: 'Progress',
+  showProgress: true
+};
+
+export const DisabledButton = Template.bind({});
+DisabledButton.args = {
+  theme: 'primary',
+  children: 'Unbutton me',
+  disabled: true
+};
+
+export const SecondaryFlatBtn = Template.bind({});
+SecondaryFlatBtn.args = {
+  theme: 'secondary',
+  children: 'Secondary Button',
+};
+
+export const SecondaryBtnStroke = Template.bind({});
+SecondaryBtnStroke.args = {
+  theme: 'secondary',
+  children: 'Secondary Button with Stroke',
+  stroke: true
+};
+
+
+

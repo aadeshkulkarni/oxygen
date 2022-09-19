@@ -12,11 +12,15 @@ import StackAlt from './assets/stackalt.svg';
 
 <style>
   {`
+    #docs-root{
+      color: #6B6584 !important;
+      font-family:Arial !important;
+    }
     .subheading {
       --mediumdark: '#999999';
       font-weight: 900;
       font-size: 13px;
-      color: #999;
+      -- color: #999;
       letter-spacing: 6px;
       line-height: 24px;
       text-transform: uppercase;
@@ -112,17 +116,25 @@ import StackAlt from './assets/stackalt.svg';
       display: inline-block;
     }
     .fynd {
-      color: purple;
-      font-size:2rem;
+      color: #D51987;
+      font-size:1.5rem;
+      font-family: Helvetica;
+      font-weight:900;
     }
     .oxygen {
-      color: blue;
-      font-size:2rem;
+      color: #00919B;
+      font-size:1.6rem;
+    }
+    .react {
+      color: #1EA7FD;
+      font-size:1.5rem;
     }
   `}
 </style>
+## Welcome to <span class="oxygen">Oxygen</span> :   <span class="fynd">Fynd's</span> indigenous <span class="react">React</span> UI library
 
-# Welcome to <span class="fynd">Fynd</span> <span class="oxygen">Oxygen</span> Storybook
+Oxygen (Pyaar se called <strong>O2</strong>) is an open design language to help you think, design and build valuable experiences.
+Design Better, Build Faster
 
 Storybook helps you build UI components in isolation from your app's business logic, data, and context.
 That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
@@ -130,7 +142,7 @@ That makes it easy to develop hard-to-reach states. Save these UI states as **st
 Browse example stories now by navigating to them in the sidebar.
 View their code in the `stories` directory to learn how they work.
 We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
-
+<!-- 
 <div className="subheading">Configure</div>
 
 <div className="link-list">
@@ -180,6 +192,12 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
   </a>
 </div>
 
+-->
+<div className="tip-wrapper">
+  <span className="tip">Note</span>This could be the start of something{' '}
+  <code>Hugeee!</code>
+</div>
+
 <div className="subheading">Learn</div>
 
 <div className="link-list">
@@ -213,7 +231,4 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
   </a>
 </div>
 
-<div className="tip-wrapper">
-  <span className="tip">Tip</span>Edit the Markdown in{' '}
-  <code>stories/Introduction.stories.mdx</code>
-</div>
+
