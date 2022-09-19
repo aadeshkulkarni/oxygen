@@ -37,5 +37,6 @@ export const Badge_success =  Template.bind({});
 // // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Badge_success.args = {
 state : "success",
-fill:true
+fill:true,
+children : "Edit Now"
 };
